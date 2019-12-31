@@ -7,32 +7,32 @@ A todo website just for testing golang web framework gin
 
 Debian based(Ubuntu, Debian etc.) :
 
-` 
-$ sudo apt-get update 
+  - `$ sudo apt-get update `
 
-$ sudo apt-get install sqlite3
-` 
+  - `$ sudo apt-get install sqlite3 ` 
 RPM based(RHEL, CentOS, Fedora etc.) :
 
-` 
-$ sudo yum update 
+  - `$ sudo yum update` 
 
-$ sudo yum install sqlite
-` 
+  - `$ sudo yum install sqlite` 
 
 ### try-gin
 
-` 
-$ go get 
-`
+  - `$ cp .env.example .env`
+  
+  - update  the .env file with your DB url.
+
+  - `$ go get`
+
+  - `$ pip install pre-commit`
+
+  - `$ pre-commit install`
+
+
 ## Run
-` 
-$ make dev
-`
+  - `$ make dev`
 ## Testing
-` 
-$ make test
-`
+  - `$ make test`
 
 ## Routes
 

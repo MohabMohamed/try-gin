@@ -12,7 +12,7 @@ var DbURL string
 
 // LoadEnv loads enviroment vars required for th project from .env file.
 func LoadEnv() {
-	err := godotenv.Load(".env")
+	err := godotenv.Load("../.env")
 	if err != nil {
 		log.Fatal("Error loading .env file")
 	}
