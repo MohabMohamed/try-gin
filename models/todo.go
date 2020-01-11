@@ -21,3 +21,9 @@ func (todo Todo) UpdateByID() error {
 	}
 	return DB.Save(&todo).Error
 }
+
+func GetAllTodos() ([]Todo, error) {
+	var todos []Todo
+	err := DB.Find(&todos).Error
+	return todos, err
+}
